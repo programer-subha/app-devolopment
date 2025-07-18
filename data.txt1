@@ -1,0 +1,71 @@
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const index = () => {
+  return (
+    <View>
+      <View style={styles.box1}></View>
+      <View style={styles.box2}></View>
+      <View style={styles.box3}></View>
+      <View style={styles.box4}>
+        <View style={styles.box5}></View>
+        <View style={styles.box6}></View>
+      </View>
+      <View style={styles.box7}></View>
+    </View>
+  )
+}
+
+export default index
+
+const styles = StyleSheet.create({
+  box1:{
+    height:100,
+    width:100,
+    backgroundColor:"red",
+
+  },
+  box2:{
+    height:80,
+    width:"100%",
+    backgroundColor:'red',
+    marginTop:30,
+  },
+  box3:{
+    height:100,
+    width:300,
+    borderRadius:40,
+    backgroundColor:'blue',
+    marginTop:30
+  },
+box4:{
+  height:220,
+    width:200,
+    
+    backgroundColor:'blue',
+    marginTop:20,
+},
+box5:{
+  height:70,
+  width:70,
+  backgroundColor:'orange',
+  borderRadius:'100%',
+  marginBottom:20,
+},
+box6:{
+  height:70,
+  width:70,
+  backgroundColor:'violet',
+  
+  marginBottom:10,
+
+},
+box7:{
+  height:80,
+  width:'100%',
+  backgroundColor:'red',
+  marginTop:10,
+  borderRadius:30
+}
+
+})
